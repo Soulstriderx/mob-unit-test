@@ -30,4 +30,5 @@ jobs:
 workflows:
   run-unit-test:
     jobs:
-      - run-unit-test
+      - android/run-tests:
+          test-command: ./gradlew testDebugUnitTest
