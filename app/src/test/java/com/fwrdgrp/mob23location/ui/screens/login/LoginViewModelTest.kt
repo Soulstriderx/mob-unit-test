@@ -82,8 +82,8 @@ class LoginViewModelTest {
         assert(viewModel.validateFields("email@a.com", "pass") == null)
     }
 
-//    @Test
-//    fun `(Should fail)Validation should pass for email@gmail,com and pass`() {
-//        assert(viewModel.validateFields("email@gmail.com", "pass") == null)
-//    }
+    @Test
+    fun `(Should fail)Validation should pass for email@gmail,com and pass`() {
+        assert(viewModel.validateFields("email@gmail.com", "pass") == null)
+    }
 }
